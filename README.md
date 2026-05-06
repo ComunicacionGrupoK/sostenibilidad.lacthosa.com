@@ -1,4 +1,3 @@
-````md
 # Memoria de Sostenibilidad Sula 2023-2024
 
 Sitio web estático para presentar la **Memoria de Sostenibilidad Sula 2023-2024** bajo el concepto **Pulso Responsable: Cada Acción Cuenta**.
@@ -7,10 +6,7 @@ El proyecto muestra una landing page con identidad visual de Lacthosa/Sula, acce
 
 ## Sitio
 
-```txt
 https://sostenibilidad.lacthosa.com
-```
-````
 
 ## Vista general
 
@@ -232,7 +228,3 @@ Si cambia el dominio final, actualizar en `index.html` las siguientes líneas:
 Proyecto desarrollado para la presentación digital de la **Memoria de Sostenibilidad Sula 2023-2024**.
 
 Concepto: **Pulso Responsable: Cada Acción Cuenta**.
-
-```
-
-```
