@@ -1,17 +1,22 @@
 {
     "name": "memoria-sostenibildiad",
     "version": "1.0.0",
+    "description": "Sitio estático para la Memoria de Sostenibilidad Sula 2023-2024.",
+    "main": "index.html",
     "scripts": {
-      "start": "npx serve -s",
-      "build": "echo 'No build step'"
+        "start": "npx serve -s . -l 3000",
+        "build": "echo \"No build step required\""
     },
     "dependencies": {
-        "express": "^4.17.1",
         "serve": "^14.2.1"
     },
-    "main": "index.html",
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "description": ""
+    "keywords": [
+        "sostenibilidad",
+        "lacthosa",
+        "sula",
+        "memoria",
+        "landing"
+    ],
+    "author": "Lacthosa",
+    "license": "ISC"
 }
