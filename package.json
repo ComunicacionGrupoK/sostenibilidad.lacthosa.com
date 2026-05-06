@@ -1,0 +1,17 @@
+{
+    "name": "memoria-sostenibildiad",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "npx serve -s",
+      "build": "echo 'No build step'"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "serve": "^14.2.1"
+    },
+    "main": "index.html",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}

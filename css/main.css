@@ -1,0 +1,232 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/bg.svg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 5vh;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Animaciones de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleDown {
+    from {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.pulselogo{
+    width: 500px;
+    opacity: 0;
+    animation: scaleDown 0.5s ease-out 1.2s forwards;
+}
+
+.pulseContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.buttonsContainer{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 1.8s forwards;
+}
+
+.btn-primary{
+    background-color: #00B4D8;
+    color: white;
+    padding: 14px 32px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-primary:hover{
+    background-color: #0096C7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 180, 216, 0.3);
+}
+
+.btn-download{
+    background: transparent;
+    color: white;
+    padding: 14px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-download:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.btn-download svg{
+    transition: transform 0.3s ease;
+}
+
+.btn-download:hover svg{
+    transform: translateY(3px);
+}
+
+.isologo{
+    height: 100px;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.6s forwards;
+}
+
+.pulseContainer{
+    display: flex;
+    justify-content: space-between;
+    min-height:60vh;
+    align-items: flex-end;
+
+}
+
+.logo{
+    height: 70px;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+}
+
+
+.lactohsaContainer{
+display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 20px;
+}
+
+.header{
+    max-width: 1200px;
+    min-height:70vh;
+  
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.containermemory{
+    background-color: #213A8F;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: -40px;
+}
+
+.flipbook-iframe{
+    width: 100%;
+    max-width: 1200px;
+    height: 80vh;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries para Móvil */
+@media screen and (max-width: 768px) {
+    .pulseContainer{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        min-height: 80vh;
+        padding: 20px 0;
+    }
+    
+    .pulseContent{
+        align-items: center;
+        width: 100%;
+    }
+    
+    .buttonsContainer{
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        gap: 15px;
+    }
+    
+    .btn-primary,
+    .btn-download{
+        width: auto;
+        text-align: center;
+        justify-content: center;
+        font-size: 15px;
+        padding: 12px 24px;
+    }
+    
+    .pulselogo{
+        width: 100%;
+        max-width: 90%;
+    }
+    
+    .isologo{
+        height: 80px;
+    }
+    
+    .logo{
+        height: 50px;
+    }
+    
+    .header{
+        padding: 15px;
+        min-height: auto;
+    }
+    
+    .container{
+        padding-top: 2vh;
+        min-height: 17vh !important;
+        max-height: 79vh;
+     
+    }
+    
+    .flipbook-iframe{
+        height: 70vh;
+    }
+    
+    .containermemory{
+        padding: 20px 10px;
+    }
+}
