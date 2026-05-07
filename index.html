@@ -1,6 +1,6 @@
 <!doctype html>
-<!--  premper.com -->
 <html
+    lang="es-HN"
     data-wf-page="661da73c6e3fbadc1c32c1d4"
     data-wf-site="661da73c6e3fbadc1c32c1ce"
 >
@@ -25,7 +25,7 @@
         <meta name="robots" content="index, follow" />
 
         <!-- Canonical -->
-        <link rel="canonical" href="https://premper.com/" />
+        <link rel="canonical" href="https://sostenibilidad.lacthosa.com/" />
 
         <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
         <meta property="og:type" content="website" />
@@ -38,21 +38,24 @@
             property="og:description"
             content="Memoria de Sostenibilidad Sula 2023-2024. Pulso Responsable: cada acción cuenta."
         />
-        <meta property="og:url" content="https://premper.com/" />
+        <meta
+            property="og:url"
+            content="https://sostenibilidad.lacthosa.com/"
+        />
         <meta
             property="og:image"
-            content="https://premper.com/images/opengraph.png"
+            content="https://sostenibilidad.lacthosa.com/images/opengraph.png"
         />
         <meta
             property="og:image:secure_url"
-            content="https://premper.com/images/opengraph.png"
+            content="https://sostenibilidad.lacthosa.com/images/opengraph.png"
         />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta
             property="og:image:alt"
-            content="Sostenibilidad Sula - Pulso Responsable"
+            content="Sostenibilidad Sula 2023-2024 - Pulso Responsable"
         />
         <meta property="og:locale" content="es_HN" />
 
@@ -68,11 +71,11 @@
         />
         <meta
             name="twitter:image"
-            content="https://premper.com/images/opengraph.png"
+            content="https://sostenibilidad.lacthosa.com/images/opengraph.png"
         />
         <meta
             name="twitter:image:alt"
-            content="Sostenibilidad Sula - Pulso Responsable"
+            content="Sostenibilidad Sula 2023-2024 - Pulso Responsable"
         />
 
         <!-- Datos estructurados para Google / LLMs -->
@@ -82,15 +85,15 @@
                 "@type": "WebPage",
                 "name": "Sostenibilidad Sula 2023-2024 | Pulso Responsable",
                 "description": "Memoria de Sostenibilidad Sula 2023-2024: Pulso Responsable. Cada acción cuenta.",
-                "url": "https://premper.com/",
-                "image": "https://premper.com/images/opengraph.png",
+                "url": "https://sostenibilidad.lacthosa.com/",
+                "image": "https://sostenibilidad.lacthosa.com/images/opengraph.png",
                 "inLanguage": "es-HN",
                 "publisher": {
                     "@type": "Organization",
                     "name": "Lacthosa",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://premper.com/images/logoLactohsa.svg"
+                        "url": "https://sostenibilidad.lacthosa.com/images/logoLactohsa.svg"
                     }
                 }
             }
@@ -128,33 +131,50 @@
         />
         <link href="images/webclip.png" rel="apple-touch-icon" />
     </head>
+
     <body>
         <section class="container">
             <div class="header">
                 <div class="lactohsaContainer">
                     <img
                         src="images/logoLactohsa.svg"
-                        alt="lactohsa"
+                        alt="Logo Lacthosa"
                         class="logo"
                     />
 
-                    <img src="images/2324.svg" alt="lactohsa" class="logo" />
+                    <img
+                        src="images/2324.svg"
+                        alt="Memoria de Sostenibilidad 2023-2024"
+                        class="logo"
+                    />
                 </div>
 
                 <div class="pulseContainer">
-                    <img src="images/isologo.svg" class="isologo" />
+                    <img
+                        src="images/isologo.svg"
+                        alt="Isologo Pulso Responsable"
+                        class="isologo"
+                    />
+
                     <div class="pulseContent">
-                        <img src="images/logoPulse.svg" class="pulselogo" />
+                        <img
+                            src="images/logoPulse.svg"
+                            alt="Logo Pulso Responsable"
+                            class="pulselogo"
+                        />
 
                         <div class="buttonsContainer">
                             <a href="#memoria" class="btn-primary"
                                 >Ver memoria</a
                             >
+
                             <a
                                 href="https://wtzcjehvfofuphkmvsru.supabase.co/storage/v1/object/public/storage/MemoriaSostenibilidad_2023-2024_.pdf"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 download
                                 class="btn-download"
+                                aria-label="Descargar Memoria de Sostenibilidad Sula 2023-2024 en PDF"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -166,6 +186,8 @@
                                     stroke-width="2"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
+                                    aria-hidden="true"
+                                    focusable="false"
                                 >
                                     <path
                                         d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
@@ -187,20 +209,23 @@
             <iframe
                 src="https://heyzine.com/flip-book/73a86c67f7.html#page/1"
                 class="flipbook-iframe"
+                title="Memoria de Sostenibilidad Sula 2023-2024"
                 frameborder="0"
                 allowfullscreen
             ></iframe>
         </div>
 
         <script>
-            // Smooth scroll para el botón "Ver memoria"
             document.addEventListener("DOMContentLoaded", function () {
                 const verMemoriaBtn =
                     document.querySelector('a[href="#memoria"]');
-                if (verMemoriaBtn) {
-                    verMemoriaBtn.addEventListener("click", function (e) {
-                        e.preventDefault();
-                        document.querySelector("#memoria").scrollIntoView({
+                const memoriaSection = document.querySelector("#memoria");
+
+                if (verMemoriaBtn && memoriaSection) {
+                    verMemoriaBtn.addEventListener("click", function (event) {
+                        event.preventDefault();
+
+                        memoriaSection.scrollIntoView({
                             behavior: "smooth",
                         });
                     });
